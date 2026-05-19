@@ -1,5 +1,12 @@
+# Dependencies
+node_modules/
+
+# Production Build
+dist/
+dist-ssr/
+
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,18 +14,47 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Local Environment Files
 *.local
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Editor directories and files
+# Editor Directories and Files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
+
+# Windows Files
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Mac Files
+.AppleDouble
+.LSOverride
+
+# Temporary Files
+tmp/
+temp/
+.cache/
+
+# Vite
+vite.config.ts.timestamp-*
+vite.config.js.timestamp-*
+
+# Package Manager
+.pnpm-store/
+.npm/
+
+# Coverage
+coverage/
+
+# Optional
+*.tgz
