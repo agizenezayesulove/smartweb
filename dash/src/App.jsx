@@ -24,6 +24,9 @@ import ChatDashboard from "./pages/ChatDashboard";
 /* ADVERTISEMENT PAGE */
 import Advertisement from "./pages/Advertisement";
 
+/* AI MODERN PAGE */
+import AIEntertainmentPage from "./pages/AIEntertainmentPage";
+
 function App() {
   return (
     <BrowserRouter>
@@ -33,7 +36,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
 
-        {/* DASHBOARD PAGES (UNCHANGED) */}
+        {/* DASHBOARD PAGES */}
         <Route path="/orders" element={<Orders />} />
         <Route path="/users" element={<Users />} />
         <Route path="/products" element={<Products />} />
@@ -56,6 +59,12 @@ function App() {
         <Route
           path="/advertisement"
           element={<Advertisement />}
+        />
+
+        {/* MODERN AI ENTERTAINMENT & ECOMMERCE */}
+        <Route
+          path="/ai-entertainment"
+          element={<AIEntertainmentPage />}
         />
       </Routes>
     </BrowserRouter>

@@ -63,7 +63,7 @@ function Sidebar({
         fixed top-0 left-0 z-50
         h-screen
         transition-all duration-300
-        border-r
+        border-r 
         ${
           sidebarOpen
             ? "w-64"
@@ -97,13 +97,31 @@ function Sidebar({
             onClick={() =>
               navigate(item.path)
             }
-            className="flex items-center gap-4 p-4 rounded-xl cursor-pointer hover:bg-slate-700"
+            className="flex items-center gap-4 p-4 rounded-xl cursor-pointer hover:bg-green-700"
           >
             {item.icon}
             <span>{item.name}</span>
           </div>
         ))}
       </div>
+
+      {/* AI INTELLIGENT ROTATION CIRCLE */}
+      <button
+        onClick={() =>
+          navigate("/ai-entertainment")
+        }
+      >
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
+          <div className="relative flex items-center justify-center">
+            
+            {/* OUTER ROTATING RING */}
+            <div className="w-10 h-10 border-2 border-yellow-400 border-t-transparent rounded-full animate-spin shadow-[0_0_20px_rgba(255,215,0,0.9)]"></div>
+
+            {/* INNER GLOW DOT */}
+            <div className="absolute w-3 h-3 bg-yellow-300 rounded-full animate-pulse shadow-[0_0_25px_rgba(255,215,0,1)]"></div>
+          </div>
+        </div>
+      </button>
     </aside>
   );
 }
