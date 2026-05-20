@@ -1,12 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import {
   FaRobot,
   FaArrowRight,
   FaPlay,
   FaPlus,
+  FaArrowLeft,
 } from "react-icons/fa";
 
 export default function AIEntertainmentPage() {
+
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-[#050816] text-white overflow-hidden flex items-center justify-center px-6 relative">
       
@@ -19,6 +24,14 @@ export default function AIEntertainmentPage() {
 
       {/* DARK OVERLAY */}
       <div className="absolute inset-0 bg-black/70"></div>
+
+      {/* BACK BUTTON */}
+      <button
+        onClick={() => navigate("/")}
+        className="absolute top-6 left-6 z-20 w-12 h-12 rounded-xl bg-white/10 backdrop-blur-lg border border-white/10 hover:bg-pink-500 transition flex items-center justify-center"
+      >
+        <FaArrowLeft />
+      </button>
 
       {/* BACKGROUND GLOW */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-pink-500/20 blur-3xl rounded-full"></div>
