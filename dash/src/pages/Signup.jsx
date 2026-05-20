@@ -71,7 +71,7 @@ function Signup() {
           
           {/* TOP */}
           <div className="mb-8">
-            <h2 className="text-4xl font-bold text-white">
+            <h2 className="text-4xl text-center font-bold text-white">
               Create Account
             </h2>
 

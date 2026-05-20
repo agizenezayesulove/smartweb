@@ -20,11 +20,7 @@ function Sidebar({
   const navigate = useNavigate();
 
   const menuItems = [
-    {
-      icon: <FaChartLine />,
-      name: "Dashboard",
-      path: "/",
-    },
+   
     {
       icon: <FaFolder />,
       name: "Projects",

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { FaArrowLeft } from "react-icons/fa";
 
 function Login() {
   const navigate = useNavigate();
@@ -43,7 +44,16 @@ function Login() {
       </div>
 
       {/* RIGHT SIDE */}
-      <div className="w-full md:w-1/2 flex items-center justify-center bg-[#f8fafc]">
+      <div className="w-full md:w-1/2 flex items-center justify-center bg-[#f8fafc] relative">
+        
+        {/* BACK BUTTON */}
+        <button
+          onClick={() => navigate("/")}
+          className="absolute top-6 left-6 bg-white shadow-md p-3 rounded-full hover:bg-pink-500 hover:text-white transition"
+        >
+          <FaArrowLeft />
+        </button>
+
         <div className="w-[90%] max-w-md bg-white p-10 rounded-3xl shadow-2xl border border-gray-100">
           
           <div className="text-center mb-8">
@@ -81,7 +91,6 @@ function Login() {
                 type="password"
                 placeholder="Enter your password"
                 className="w-full mt-2 p-4 rounded-xl border border-gray-200 outline-none focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition"
-      
               />
             </div>
 
