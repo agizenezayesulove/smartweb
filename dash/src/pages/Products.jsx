@@ -318,11 +318,11 @@ function Products() {
               shadow-2xl
             "
           >
-            <h2 className="text-3xl font-bold mb-2">
+            <h2 className="text-3xl font-bold mb-2 text-center">
               Payment
             </h2>
 
-            <p className="text-gray-400 mb-6">
+            <p className="text-gray-400 mb-6 text-center">
               {selectedProduct?.name}
             </p>
 

@@ -13,17 +13,17 @@ export default function AIEntertainmentPage() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-[#050816] text-white overflow-hidden flex items-center justify-center px-6 relative">
+    <div className="min-h-screen text-white overflow-hidden flex items-center justify-center px-6 relative bg-black">
       
-      {/* BRAIN BACKGROUND IMAGE */}
+      {/* FULL BRAIN BACKGROUND */}
       <img
         src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop"
         alt="AI Brain"
-        className="absolute inset-0 w-full h-full object-cover opacity-20"
+        className="absolute inset-0 w-full h-full object-cover"
       />
 
       {/* DARK OVERLAY */}
-      <div className="absolute inset-0 bg-black/70"></div>
+      <div className="absolute inset-0 bg-black/40"></div>
 
       {/* BACK BUTTON */}
       <button
@@ -32,10 +32,6 @@ export default function AIEntertainmentPage() {
       >
         <FaArrowLeft />
       </button>
-
-      {/* BACKGROUND GLOW */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-pink-500/20 blur-3xl rounded-full"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-yellow-400/20 blur-3xl rounded-full"></div>
 
       <div className="relative z-10 w-full max-w-5xl text-center">
         
@@ -73,7 +69,7 @@ export default function AIEntertainmentPage() {
             <input
               type="text"
               placeholder="Ask anything..."
-              className="flex-1 bg-transparent outline-none text-lg placeholder:text-slate-500"
+              className="flex-1 bg-transparent outline-none text-lg placeholder:text-slate-300"
             />
 
             {/* SEND */}
