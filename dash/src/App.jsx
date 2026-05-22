@@ -27,6 +27,9 @@ import Advertisement from "./pages/Advertisement";
 /* AI MODERN PAGE */
 import AIEntertainmentPage from "./pages/AIEntertainmentPage";
 
+/* SMART TRAFFIC AI PAGE */
+import SmartTrafficAIPrototype from "./pages/SmartTrafficAIPrototype";
+
 function App() {
   return (
     <BrowserRouter>
@@ -65,6 +68,12 @@ function App() {
         <Route
           path="/ai-entertainment"
           element={<AIEntertainmentPage />}
+        />
+
+        {/* SMART TRAFFIC AI SYSTEM */}
+        <Route
+          path="/smart-traffic"
+          element={<SmartTrafficAIPrototype />}
         />
       </Routes>
     </BrowserRouter>

@@ -55,6 +55,13 @@ function Sidebar({
       name: "Advertisement",
       path: "/advertisement",
     },
+
+    /* SMART TRAFFIC AI */
+    {
+      icon: <FaChartLine />,
+      name: "Smart Traffic AI",
+      path: "/smart-traffic",
+    },
   ];
 
   return (
